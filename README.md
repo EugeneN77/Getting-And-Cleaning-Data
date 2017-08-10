@@ -1,4 +1,4 @@
-#Getting and Cleaning Data
+# Getting and Cleaning Data
 
 ## This code assumes you are in the folder where the text files were extracted "UCI HAR Dataset
 
