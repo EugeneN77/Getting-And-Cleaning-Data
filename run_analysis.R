@@ -1,4 +1,4 @@
-# This code assumes you are in the folder where the text files were extracted
+# This code assumes you are in the folder where the text files were extracted "UCI HAR Dataset"
   
 #clear the workspace
 rm(list=ls())
@@ -77,7 +77,7 @@ colnames(comb_x3) <- gsub("-std","(std)",
 acts <- actlabels$Activity
 combb <- arrange(comb_x3,Nr)
 
-#This is the final combined dataframe. Export it.
+#This is the final combined dataframe. Export it to final_combined.txt
 final_combined <- combb
 write.table(final_combined, "./final_combined.txt", sep="\t")
 
@@ -101,7 +101,7 @@ for(i in 1:length(acts)){
         colnames(final_df_mean) <- tmpcols
 }
 
-#Add the different activities as rownames and view the final dataframe with just the means inserted
+#Add the different activities as rownames and Export it final_df_mean.txt
 rownames(final_df_mean) <- acts
 write.table(final_df_mean, "./final_df_mean.txt", sep="\t")
 
