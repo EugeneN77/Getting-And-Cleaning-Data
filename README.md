@@ -1,9 +1,4 @@
----
-title: "Getting and Cleaning Data"
-author: "Eugene Nel"
-date: "10 August 2017"
-output: html_document
----
+#Getting and Cleaning Data
 
 ## This code assumes you are in the folder where the text files were extracted "UCI HAR Dataset
 
