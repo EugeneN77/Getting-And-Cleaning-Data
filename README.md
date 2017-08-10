@@ -3,14 +3,14 @@
 ## This code assumes you are in the folder where the text files were extracted "UCI HAR Dataset
 
 Loads the libraries dplyr and tidyr first
-	* library(dplyr)
-	* library(tidyr)
+  * library(dplyr)
+  * library(tidyr)
 
 It uses the following files:
-	* features.txt
-	* activity_labels.txt - Pull in the label names for the activities
-	* test/X_test.txt - Get the test data for X
-	* test/y_test.txt - Get the test data for Y
+  * features.txt
+  * activity_labels.txt - Pull in the label names for the activities
+  * test/X_test.txt - Get the test data for X
+  * test/y_test.txt - Get the test data for Y
   * train/X_train.txt
   * train/y_train.txt
 
