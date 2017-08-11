@@ -57,6 +57,12 @@ comb_x2 <- comb_x[, !duplicated.columns]
 #Only use the mean and std columns
 #2. Extracts only the measurements on the mean and standard deviation for each measurement.
 comb_x3 <- select(comb_x2,contains("Nr"), contains("Activity"), contains("mean"), contains("std"))
+losecols <- c(names(select(comb_x2,contains("angle"))))
+
+#Remove the angle columns
+for(n in 1:length(losecols)){
+  comb_x3[[losecols[n]]] <- NULL
+}
 
 #Rename and clean up the columns to be more descriptive
 nucols <- colnames(comb_x3)
